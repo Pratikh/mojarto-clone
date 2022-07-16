@@ -1,0 +1,23 @@
+.supportNavigation {
+  display: flex;
+  gap: 25px;
+  justify-content: flex-end;
+  padding: 20px 0;
+}
+
+.iconAndSpan {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mainNavDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navLinksArtworks{
+    display: flex;
+    gap: 10px;
+}
