@@ -25,9 +25,19 @@ footer {
   margin: auto;
 }
 
-.content {
+header {
   max-width: 1500px;
-  padding: 0 20px;
+  position: sticky;
+  position: -webkit-sticky;
+  margin: auto;
+  z-index: 10;
+  top: 0;
+  background-color: white;
+}
+
+.content {
+  max-width: 1200px;
+  /* padding: 0 20px; */
   margin: auto;
 }
 

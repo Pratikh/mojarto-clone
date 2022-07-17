@@ -15,9 +15,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
 }
 
-.navLinksArtworks{
-    display: flex;
-    gap: 10px;
+.navLinksArtworks {
+  display: flex;
+  gap: 25px;
+  height: 50%;
+  border-bottom: 2px solid transparent;
+}
+
+.navLinksArtworks a:hover {
+  border-bottom: 2px solid red;
 }

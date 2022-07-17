@@ -64,12 +64,19 @@ export default function Header() {
       </nav>
 
       <div className={headerStyle.mainNavDiv}>
-        <div>
-          <Image src={"/mojarto-logo.png"} width={110} height={23} alt="Logo" />
-        </div>
+        <Link href={"/"}>
+          <a>
+            <Image
+              src={"/mojarto-logo.png"}
+              width={110}
+              height={23}
+              alt="Logo"
+            />
+          </a>
+        </Link>
         <div className={headerStyle.navLinksArtworks}>
           {navLinks.map((data) => (
-            <Link href={data.path} key={data.path}>
+            <Link href={data.path} key={data.label}>
               {data.label}
             </Link>
           ))}
