@@ -39,3 +39,37 @@
   align-items: flex-start;
   gap: 20px;
 }
+
+.curatedCollectionContainer {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: 0 -12px;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.collectionTile {
+  padding: 0 12px;
+}
+
+.collectionTile img {
+  min-width: 380px !important;
+  height: inherit !important;
+  object-fit: cover !important;
+  border-radius: 24px;
+}
+
+.imageAndTextDiv {
+  position: relative;
+}
+
+.curatedCollectionTextDiv {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  background: linear-gradient(to top, #000000f2, #2121210d);
+  border-radius: 0 0 24px 24px;
+}

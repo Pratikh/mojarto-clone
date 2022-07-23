@@ -8,7 +8,7 @@ export default function ExploreByCategory() {
   const { data } = useQuery("getLandingCategories", getLandingCategories);
   return (
     <div>
-      <h3>EXPLORE BY CATEGORY</h3>
+      <h2>EXPLORE BY CATEGORY</h2>
       <div className={styles.categoryTileContainer}>
         {data?.map((a) => (
           <div key={a.name} className={styles.categoryTile}>
