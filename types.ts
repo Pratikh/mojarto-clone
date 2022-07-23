@@ -18,3 +18,20 @@ export type curatedCollectionType = {
   bannerImageStorageUrl: string;
   description: string;
 }[];
+
+export type arrivalCollection = {
+  artworkImageUrl:string; //defaultImageUrl
+  defaultImageUrl:string; //defaultImageUrl
+  artistName: string;//creatorName
+  creatorName: string;//creatorName
+  category: string;//categoryName
+  categoryName: string;//categoryName
+  discountPercentage: number;
+  discountedPriceAfterTax:number,
+  listPriceAfterTax: string;
+  title: string;
+  medium: string;//mediumName
+  mediumName: string;//mediumName
+  heightInInches: number;
+  widthInInches: number;
+}[];

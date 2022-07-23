@@ -72,4 +72,13 @@
   width: 100%;
   background: linear-gradient(to top, #000000f2, #2121210d);
   border-radius: 0 0 24px 24px;
+  padding: 15px;
+}
+
+.curatedCollectionTextDiv h2 {
+  text-decoration: underline;
+}
+.buttonSpaced{
+  display: flex;
+  justify-content: space-between;
 }

@@ -40,12 +40,14 @@ export default function CuratedCollection() {
           ))}
         </div>
       </div>
+      <div className={styles.buttonSpaced}>
         <button onClick={showPrev} className={styles.carousalNavBtn}>
           <span className="material-symbols-outlined">arrow_back</span>
         </button>
         <button onClick={showNext} className={styles.carousalNavBtn}>
           <span className="material-symbols-outlined">arrow_forward</span>
         </button>
+      </div>
     </>
   );
 }

@@ -5,6 +5,7 @@ import {
   getHomeBannerData,
   getLandingCategories,
   getCuratedCollection,
+  getArrivals,
 } from "../services/homepageApi";
 import { dehydrate, QueryClient } from "react-query";
 import { GetServerSideProps } from "next";
@@ -38,6 +39,15 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     queryClient.prefetchQuery("getCuratedCollection", getCuratedCollection, {
       staleTime: Infinity,
     })
+  );
+  allPromise.push(
+    queryClient.prefetchQuery(
+      "getArrivals",
+      getArrivals.bind(null, "newArrivals"),
+      {
+        staleTime: Infinity,
+      }
+    )
   );
   await Promise.all(allPromise);
   return {

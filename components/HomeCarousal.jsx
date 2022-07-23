@@ -22,7 +22,6 @@ export default function HomeCarousal() {
         : data.length - 1;
     });
   };
-  console.log({ currentShow });
   return (
     <div className={homeStyle.carousalContainer}>
       {data.map((a, index) => (

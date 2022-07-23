@@ -13,7 +13,6 @@ export default async function handler(
   const bannerData = (await (
     await fetch("https://api.mojarto.com/public/landing/curatedCollection")
   ).json()) as curatedCollectionType;
-  console.log({bannerData});
   
   const finalResponse = bannerData.map(
     ({ id, title, externalUrl, bannerImageStorageUrl, description }) => {
